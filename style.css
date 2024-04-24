@@ -193,3 +193,31 @@ body {
         opacity: 0;
     }
 }
+
+.border_one {
+    width: 600px;
+    height: 120px;
+    border: 3px solid blueviolet;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 350px;
+    animation: border_pulse 4s linear infinite;
+}
+
+@keyframes border_pulse {
+    0% {
+        border: 3px;
+        box-shadow: 0px 0px 20px 0px blueviolet;
+    }
+
+    50% {
+        border: 3px;
+        box-shadow: 10px 10px 40px 10px blueviolet;
+    }
+
+    100% {
+        border: 3px;
+        box-shadow: 0px 0px 20px 0px blueviolet;
+    }
+
+}
